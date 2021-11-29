@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import Hero from "../Hero/Hero";
-import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
-import "./About.css";
-import AboutImg from "../../eduford_img/about.jpg";
+import Footer from "../Footer/Footer";
+import "./CourseScreen.css";
+import Certificate from "../../eduford_img/certificate.jpg";
 
-const About = () => {
+const CourseScreen = () => {
   let navLinks;
   useEffect(() => {
     navLinks = document.getElementById("navLinks");
@@ -53,7 +52,7 @@ const About = () => {
           </div>
           <i className="fa fa-bars" onClick={showMenu}></i>
         </nav>
-        <h1>About Us</h1>
+        <h1>Our Certifications and Online Programs</h1>
       </section>
 
       <section className="about-us-content">
@@ -66,10 +65,12 @@ const About = () => {
               porro deleniti ducimus repellat? Velit consequuntur vel excepturi
               dignissimos doloremque eaque eum veritatis?
             </p>
-            <Link to="" className = "hero-btn">Explore Now</Link>
+            <Link to="" className="hero-btn">
+              Explore Now
+            </Link>
           </div>
           <div className="about-us-col">
-            <img src={AboutImg} />
+            <img src={Certificate} />
           </div>
         </div>
       </section>
@@ -79,4 +80,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default CourseScreen;
